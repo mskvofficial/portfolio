@@ -1,0 +1,180 @@
+/* style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+
+header{
+    background-color: #111;
+    padding: 20px 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #00bfff;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 90vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: white;
+    color: #1e3c72;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #00bfff;
+    color: white;
+}
+
+/* About Section */
+
+.about{
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.about p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+
+.skills{
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.skills h2{
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.skill-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+
+.contact{
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.contact p{
+    margin: 10px 0;
+}
+
+/* Footer */
+
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+}
