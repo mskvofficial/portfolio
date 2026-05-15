@@ -1,0 +1,155 @@
+export default function PortfolioWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Hero Section */}
+      <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-b from-black to-gray-900">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">MSKV</h1>
+        <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
+          Civil Engineering Student • Planning Director • Content Creator • Future Entrepreneur
+        </p>
+
+        <div className="mt-8 flex gap-4 flex-wrap justify-center">
+          <a
+            href="#about"
+            className="bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
+          >
+            Explore Portfolio
+          </a>
+
+          <a
+            href="#contact"
+            className="border border-white px-6 py-3 rounded-2xl hover:bg-white hover:text-black transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-24 px-6 md:px-20 bg-gray-950">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-4xl font-bold mb-6">About Me</h2>
+            <p className="text-gray-300 leading-8 text-lg">
+              I am a civil engineering student with strong interest in coding,
+              leadership, planning, problem solving, and content creation. I
+              enjoy building creative ideas, managing projects, and learning new
+              technologies that support both engineering and digital growth.
+            </p>
+          </div>
+
+          <div className="bg-gray-900 p-8 rounded-3xl shadow-2xl">
+            <h3 className="text-2xl font-semibold mb-6">Skills</h3>
+
+            <div className="flex flex-wrap gap-3">
+              {[
+                'Civil Engineering',
+                'Planning',
+                'Leadership',
+                'Communication',
+                'Problem Solving',
+                'Time Management',
+                'Content Creation',
+                'Team Coordination',
+                'Web Development',
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-24 px-6 md:px-20 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-14">Projects</h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Civil Engineering Design',
+                desc: 'Academic and practical civil engineering project works and structural planning.',
+              },
+              {
+                title: 'YouTube Content Creation',
+                desc: 'Travel and vlog content focused on storytelling, creativity, and audience engagement.',
+              },
+              {
+                title: 'Startup Planning',
+                desc: 'Research and planning activities for building a future company with like-minded people.',
+              },
+            ].map((project) => (
+              <div
+                key={project.title}
+                className="bg-gray-950 border border-gray-800 rounded-3xl p-8 hover:-translate-y-2 transition duration-300"
+              >
+                <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
+                <p className="text-gray-400 leading-7">{project.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Appointment Section */}
+      <section className="py-24 px-6 md:px-20 bg-gray-950">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-14">Appointments</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-black border border-gray-800 rounded-3xl p-8">
+              <h3 className="text-2xl font-semibold mb-4">Discovery Call</h3>
+              <p className="text-gray-400 leading-7">
+                A free 15-minute online meeting focused on networking,
+                communication, and future opportunities.
+              </p>
+            </div>
+
+            <div className="bg-black border border-gray-800 rounded-3xl p-8">
+              <h3 className="text-2xl font-semibold mb-4">Face-to-Face Meeting</h3>
+              <p className="text-gray-400 leading-7">
+                Direct professional meetings based on purpose and confirmation.
+                Timing is flexible after approval.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-24 px-6 md:px-20 bg-black">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8">Contact</h2>
+
+          <p className="text-gray-400 text-lg mb-10">
+            Connect with me through social media and professional platforms.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5">
+            {['Instagram', 'YouTube', 'LinkedIn', 'WhatsApp', 'Email'].map(
+              (item) => (
+                <button
+                  key={item}
+                  className="bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
+                >
+                  {item}
+                </button>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+        © 2026 MSKV Portfolio Website. All rights reserved.
+      </footer>
+    </div>
+  );
+}
