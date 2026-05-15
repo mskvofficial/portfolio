@@ -1,13 +1,21 @@
 <!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Personal Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
+
 <body>
+
+    <!-- Header -->
 
     <header>
         <nav>
@@ -22,50 +30,97 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+
     <section class="hero" id="home">
-        <div class="hero-content">
+
+        <div class="hero-content" data-aos="fade-up">
+
             <h2>Hello, I'm</h2>
+
             <h1>Your Name</h1>
+
             <p>
                 Civil Engineering Student | Content Creator | Future Entrepreneur
             </p>
 
             <a href="#contact" class="btn">Contact Me</a>
+
         </div>
+
     </section>
+
+    <!-- About Section -->
 
     <section class="about" id="about">
-        <h2>About Me</h2>
 
-        <p>
+        <h2 data-aos="fade-right">About Me</h2>
+
+        <p data-aos="fade-left">
             I am a passionate and hardworking person who is interested in civil engineering, coding, communication, and creative content creation. I always focus on improving my skills and building a successful future through learning and dedication.
         </p>
+
     </section>
+
+    <!-- Skills Section -->
 
     <section class="skills" id="skills">
-        <h2>My Skills</h2>
+
+        <h2 data-aos="zoom-in">My Skills</h2>
 
         <div class="skill-box">
-            <div class="card">Civil Engineering</div>
-            <div class="card">Leadership</div>
-            <div class="card">Communication</div>
-            <div class="card">Time Management</div>
-            <div class="card">Problem Solving</div>
-            <div class="card">Content Creation</div>
+
+            <div class="card" data-aos="flip-left">Civil Engineering</div>
+
+            <div class="card" data-aos="flip-left" data-aos-delay="100">Leadership</div>
+
+            <div class="card" data-aos="flip-left" data-aos-delay="200">Communication</div>
+
+            <div class="card" data-aos="flip-left" data-aos-delay="300">Time Management</div>
+
+            <div class="card" data-aos="flip-left" data-aos-delay="400">Problem Solving</div>
+
+            <div class="card" data-aos="flip-left" data-aos-delay="500">Content Creation</div>
+
         </div>
+
     </section>
+
+    <!-- Contact Section -->
 
     <section class="contact" id="contact">
-        <h2>Contact Me</h2>
 
-        <p>Email: yourmail@example.com</p>
-        <p>Instagram: @yourusername</p>
-        <p>YouTube: Your Channel Name</p>
+        <h2 data-aos="fade-up">Contact Me</h2>
+
+        <p data-aos="fade-up" data-aos-delay="100">
+            Email: yourmail@example.com
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            Instagram: @yourusername
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="300">
+            YouTube: Your Channel Name
+        </p>
+
     </section>
 
+    <!-- Footer -->
+
     <footer>
+
         <p>© 2026 My Portfolio | All Rights Reserved</p>
+
     </footer>
+
+    <!-- AOS Script -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript File -->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
